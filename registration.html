@@ -1,58 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration Form</title>
+<title>Registration Form</title>
+
+<style>
+body{
+    background:#d6eaf8;
+    font-family:Arial;
+}
+form{
+    width:300px;
+    margin:80px auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    text-align:center;
+}
+input{
+    width:95%;
+    padding:8px;
+    margin:8px 0;
+}
+input[type="submit"]{
+    background:green;
+    color:white;
+}
+input[type="reset"]{
+    background:red;
+    color:white;
+}
+textarea{
+    width:95%;
+    padding:8px;
+    margin:8px 0;
+}
+</style>
+
 </head>
 <body>
 
-    <h2>Student Registration Form</h2>
+<form>
+<h2 style="color:blue;">Registration Form</h2>
 
-    <form>
+<input type="text" placeholder="Roll Number" required>
+<input type="text" placeholder="Name" required>
+<input type="password" placeholder="Password" required>
+<input type="email" placeholder="Email" required>
+<input type="tel" placeholder="Phone Number" required>
+<label>Address</label><br>
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
 
-        <label>Full Name:</label><br>
-        <input type="text" name="fullname" required><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
-
-        <label>Password:</label><br>
-        <input type="password" name="password" required><br><br>
-
-        <label>Phone Number:</label><br>
-        <input type="tel" name="phone" maxlength="10"><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <input type="radio" name="gender" value="Other"> Other
-        <br><br>
-
-        <label>Date of Birth:</label><br>
-        <input type="date" name="dob"><br><br>
-
-        <label>Course:</label><br>
-        <select name="course">
-            <option value="">--Select Course--</option>
-            <option>CSE</option>
-            <option>ECE</option>
-            <option>EEE</option>
-            <option>Mechanical</option>
-            <option>Civil</option>
-        </select>
-        <br><br>
-
-        <label>Address:</label><br>
-        <textarea name="address" rows="4" cols="30"></textarea>
-        <br><br>
-
-        <input type="checkbox" required>
-        I agree to the Terms and Conditions.
-        <br><br>
-<h1>zaid rahil<h1>
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-
-    </form>
+</form>
 
 </body>
 </html>
